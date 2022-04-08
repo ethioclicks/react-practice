@@ -1,25 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import Greet from './components/Greet';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
+  render () {
+    return (
+      <div className="App">
+        <Greet/>
+      </div>
+    );
+  }
 }
 
 export default App;
