@@ -9,9 +9,15 @@ class App extends Component { //in the latest react app we start our app with fu
   render () {
     return (
       <div className="App">
-        {/* <Greet/>
-        <Welcome/> */}
-        <Hello/>
+        <Greet name="Bruce" heroName ="Batman"/>
+          <p>This is a children props of Bruce</p>
+        <Greet name="Clark" heroName ="Superman"/>
+          <button>Action</button>
+        <Greet name="Diana" heroName ="Wonder Women"/>
+        <Welcome name="Bruce" heroName ="Batman"/>
+        <Welcome name="Clark" heroName ="Superman"/>
+        <Welcome name="Diana" heroName ="Wonder Women"/>
+        {/* <Hello/> */}
       </div>
     );
   }
