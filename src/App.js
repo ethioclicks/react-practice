@@ -9,11 +9,13 @@ import Counter from './components/Counter';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <EventBind />
+        <ParentComponent/>
+        {/* <EventBind /> */}
         {/* <FunctionClick />
         <ClassClick /> */}
         {/* <Counter /> */}
