@@ -11,11 +11,13 @@ import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
+import NameList from './components/NameList';
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <UserGreeting/>
+        <NameList/>
+        {/* <UserGreeting/> */}
         {/* <ParentComponent/> */}
         {/* <EventBind /> */}
         {/* <FunctionClick />
