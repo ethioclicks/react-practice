@@ -20,13 +20,16 @@ import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import ParentComp from './components/ParentComp';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <FragmentDemo/>
-        <Table/>
+        <ParentComp/>
+        
+        {/* <FragmentDemo/>
+        <Table/> */}
         
         
         
