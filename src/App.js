@@ -18,17 +18,19 @@ import './appStyles.css';
 import  styles from './appStyles.module.css';
 import Form from './components/Form';
 import LifecycleA from './components/LifecycleA';
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <LifecycleA/>
+        <FragmentDemo/>
+        <Table/>
         
         
         
-        
-        
+        {/* <LifecycleA/> */}
         {/* <Form/> */}
         {/* <h1 className='error'>Error</h1>
         <h1 className={styles.success}>Success</h1> */}
