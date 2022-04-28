@@ -29,13 +29,32 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import User from './components/User';
+import CounterRender from './components/CounterRender';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <ClickCounter/>
-        <HoverCounter  name="Hello"/>
+        <CounterRender>
+          {(count, incrementCount)=> 
+            <ClickCounterTwo count={count} incrementCount={incrementCount}/>}
+        
+        </CounterRender> 
+          
+        <CounterRender>
+          {(count, incrementCount)=> 
+            <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
+        
+        </CounterRender>
+
+       {/* <ClickCounterTwo/>
+       <HoverCounterTwo/>
+       <User render={(iLoggedIn) => isLoggedIn ? 'Hello' : 'Guest'}/> */}
+        {/* <ClickCounter/>
+        <HoverCounter  name="Hello"/> */}
 
         {/* <ErrorBoundary>
           <Hero heroName="Batman" />
