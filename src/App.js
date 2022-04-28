@@ -27,12 +27,17 @@ import FRParentInput from './components/FRParentInput';
 import PortalDemo from './components/PortalDemo';
 import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <ErrorBoundary>
+        <ClickCounter/>
+        <HoverCounter  name="Hello"/>
+
+        {/* <ErrorBoundary>
           <Hero heroName="Batman" />
         </ErrorBoundary>
         <ErrorBoundary>
@@ -40,7 +45,7 @@ class App extends Component { //in the latest react app we start our app with fu
         </ErrorBoundary>
         <ErrorBoundary>
           <Hero heroName="Joker" />
-        </ErrorBoundary>
+        </ErrorBoundary> */}
 
 
         {/* <PortalDemo/> */}
