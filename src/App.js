@@ -33,12 +33,19 @@ import ClickCounterTwo from './components/ClickCounterTwo';
 import HoverCounterTwo from './components/HoverCounterTwo';
 import User from './components/User';
 import CounterRender from './components/CounterRender';
+import { UserProvider } from './components/userContext';
+import ComponentC from './components/ComponentC';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <CounterRender>
+        <UserProvider value="Hello">
+          <ComponentC/>
+        </UserProvider>
+
+
+        {/* <CounterRender>
           {(count, incrementCount)=> 
             <ClickCounterTwo count={count} incrementCount={incrementCount}/>}
         
@@ -48,7 +55,7 @@ class App extends Component { //in the latest react app we start our app with fu
           {(count, incrementCount)=> 
             <HoverCounterTwo count={count} incrementCount={incrementCount}/>}
         
-        </CounterRender>
+        </CounterRender> */}
 
        {/* <ClickCounterTwo/>
        <HoverCounterTwo/>
