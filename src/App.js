@@ -35,14 +35,20 @@ import User from './components/User';
 import CounterRender from './components/CounterRender';
 import { UserProvider } from './components/userContext';
 import ComponentC from './components/ComponentC';
+import PostList from './components/PostList';
+import PostForm from './components/PostForm';
 
 class App extends Component { //in the latest react app we start our app with function but we have changed it to class component.
   render () {
     return (
       <div className="App">
-        <UserProvider value="Hello">
+        {/* <PostList/> */}
+        
+        <PostForm/>
+        
+        {/* <UserProvider value="Hello">
           <ComponentC/>
-        </UserProvider>
+        </UserProvider> */}
 
 
         {/* <CounterRender>
