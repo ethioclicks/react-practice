@@ -1,15 +1,20 @@
 import './App.css';
-import { Component } from 'react';
-import DataFetching from './components/DataFetching';
+import React, { Component } from 'react';
+import ComponentC from './components/ComponentC';
 
-class App extends Component {
-  render () {
-    return (
-      <div className="App">
-        <DataFetching/>
-      </div>
-    );
-  }
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
+
+function App(props) {
+  return (
+    <div>
+      <UserContext.Provider value={'Hello'}>
+        <ChannelContext.Provider value={'World'}>
+          <ComponentC/>
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+    </div>
+  );
 }
 
 export default App;
