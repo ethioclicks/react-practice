@@ -1,11 +1,11 @@
 import './App.css';
 import React from 'react';
-import UseState from './components/UseState/UseState';
+import UseReducer from './components/UseReducer.js/UseReducer';
 
 function App() {
   return (
     <div className="App">
-       <UseState />
+       <UseReducer />
     </div>
    
   );
