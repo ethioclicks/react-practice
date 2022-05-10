@@ -1,13 +1,11 @@
 import './App.css';
 import React from 'react';
-import CountOne from './components/CountOne';
-import CountTwo from './components/CountTwo';
+import UserForm from './components/UserForm';
 
 function App() {
   return (
     <div className="App">
-       <CountOne />
-       <CountTwo />
+       <UserForm />
     </div>
    
   );
