@@ -12,6 +12,7 @@ export const ChildA = () => {
     </>
   )
 }
+export const MemoizedChildA = React.memo(ChildA)
 
 export const ChildB = () => {
     console.log('Child B Render')
@@ -33,7 +34,6 @@ export const ChildC = () => {
         <div>
             Child C count = {count}
         </div>
-        <ChildC/>
     </>
   )
 }
