@@ -33,7 +33,6 @@ export const ChildC = () => {
         <div>
             Child C count = {count}
         </div>
-        <ChildC/>
     </>
   )
 }
