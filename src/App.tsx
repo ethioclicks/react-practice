@@ -1,11 +1,9 @@
 import './App.css';
-import { DomRef } from './Components/ref/DomRef';
-import { MutableRef } from './Components/ref/MutableRef';
+import { Counter } from './Components/Class/Counter';
 function App() {
   return (
     <div className="App">
-      <DomRef/>
-      <MutableRef/>
+      <Counter message='The count value is'/>
     </div>
   );
 }
