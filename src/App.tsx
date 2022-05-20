@@ -1,12 +1,11 @@
 import './App.css';
-import { CustomButton } from './Components/html/Button';
-import { CustomComponent } from './Components/html/CustomComponent';
-import { CustomInput } from './Components/html/Input';
-import { Toast } from './Components/templateliterals/Toast';
+import { Test } from './Components/polymorphic/Test';
 function App() {
   return (
     <div className="App">
-      <CustomComponent name='hello' isLoggedIn={false}/>
+      <Test as='h1' size='lg'>Heading</Test>
+      <Test as='p' size='md'>Paragraph</Test>
+      <Test as='label' htmlFor='someId' size='sm'color='secondary'>Label</Test>
     </div>
   );
 }
