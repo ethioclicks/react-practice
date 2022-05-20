@@ -1,9 +1,9 @@
 import './App.css';
-import { RandomNumbers } from './Components/restriction/RandomNumbers';
+import { Toast } from './Components/templateliterals/Toast';
 function App() {
   return (
     <div className="App">
-      <RandomNumbers  value={10} isNegative={true} />
+      <Toast position='center' />
     </div>
   );
 }
