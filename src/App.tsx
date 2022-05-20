@@ -1,12 +1,11 @@
 import './App.css';
-import { UserContextProvider } from './Components/context/UserContext';
-import { User } from './Components/context/User';
+import { DomRef } from './Components/ref/DomRef';
+import { MutableRef } from './Components/ref/MutableRef';
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <DomRef/>
+      <MutableRef/>
     </div>
   );
 }
